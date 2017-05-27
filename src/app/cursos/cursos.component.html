@@ -1,7 +1,9 @@
 <p>
   Lista de cursos
 </p>
-
+<div *ngIf="novoCuro">
+  <p>Novo Curso: {{novoCuro?.id}} - {{novoCuro?.nome}}</p>
+</div>
 <ul>
   <li *ngFor="let curso of cursos">Curso id: {{curso.id}} - {{curso.nome}}</li>
 </ul>

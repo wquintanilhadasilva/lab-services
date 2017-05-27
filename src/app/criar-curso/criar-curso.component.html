@@ -1,0 +1,15 @@
+<p>
+  criar-curso works!
+</p>
+
+<input type="text" #id>
+<br>
+<input type="text" #nome>
+<br>
+<button (click)="addCurso(id.value, nome.value)">Incluir</button>
+
+<ul>
+  <li *ngFor="let curso of cursos">Curso id: {{curso.id}} - {{curso.nome}}</li>
+</ul>
+
+<app-receber-curso-criado></app-receber-curso-criado>
